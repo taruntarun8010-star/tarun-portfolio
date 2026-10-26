@@ -1,4 +1,5 @@
-resumePdf: '/resume.pdf'`/**
+
+/**
  * Central portfolio data — generated from Tarun Kumar Sinha's resume.
  * Every fact on the site comes from this file. Update it here and the whole site follows.
  * Nothing here should be added unless it appears on the resume.
