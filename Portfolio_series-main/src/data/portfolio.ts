@@ -26,6 +26,7 @@ export const profile = {
   },
   resumePdf: '/resume.pdf',
   portrait: {
+    image: "/pic.png",
     src: '/pic.png',
     srcSet: '/pic.png 420w, /pic.png 720w, /pic.png 1100w',
     alt: 'Portrait of Tarun Kumar Sinha',
