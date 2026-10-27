@@ -18,6 +18,7 @@ import Achievements from './components/Achievements';
 import ResumeSection from './components/ResumeViewer';
 import FinalCTA from './components/FinalCTA';
 import { EASE } from './components/fx';
+import Chatbot from './components/Chatbot';
 
 // Overlays are only needed on demand — split them out of the first load.
 const PlayIntro = lazy(() => import('./components/PlayIntro'));
@@ -107,6 +108,7 @@ function Series() {
     <LayoutGroup>
       <div className="grain" aria-hidden />
       <CustomCursor />
+      <Chatbot />
 
       <AnimatePresence>
         {stage === 'opening' && <OpeningSequence key="opening" onDone={() => setStage('profiles')} />}
