@@ -1,6 +1,6 @@
-# SUSHMITA — THE SERIES
+# TARUN — THE SERIES
 
-A cinematic, streaming-inspired portfolio for **Sushmita Dasari**: Full-Stack Developer and B.Tech AI & ML student.
+A cinematic, streaming-inspired portfolio for **Tarun Dasari**: Full-Stack Developer and B.Tech AI & ML student.
 Every section is an episode, every project is an Original, and the whole site plays like a series.
 
 > A personal portfolio with a fictional streaming-platform look. It is not affiliated with Netflix or any other streaming service and uses none of their logos.
@@ -41,7 +41,7 @@ The static site is written to `dist/` and can be deployed as-is to Vercel, Netli
 | Profile order (Recruiter / Developer / Creative) | `viewerProfiles` |
 | Opening studio card text | `profile.originalLabel` |
 
-**Resume:** replace `public/assets/Sushmita_Dasari_Resume.pdf`.
+**Resume:** replace `public/assets/Tarun_Dasari_Resume.pdf`.
 
 **Photo:** replace `pic1.jpeg` (high-res photo) and `pic.png` (background-removed cutout with the same framing), then run:
 
@@ -58,7 +58,7 @@ src/
   data/portfolio.ts        ← single source of truth (from the resume)
   App.tsx                  ← stages: opening → profile select → home; overlays
   components/
-    OpeningSequence        ← black → studio card → SUSHMITA → THE SERIES → portrait → ▶ PLAY
+    OpeningSequence        ← black → studio card → TARUN → THE SERIES → portrait → ▶ PLAY
     ProfileSelector        ← "Who's watching?" (changes section order only)
     Navbar                 ← hide-on-scroll nav, profile switcher, mobile menu
     Hero                   ← billboard: parallax portrait, particles, light streaks, floating chips
