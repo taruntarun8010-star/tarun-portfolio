@@ -40,7 +40,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
     'FULL-STACK',
     '2024–Present',
     'BCA (CCSU)',
-    '5+ Originals',
+    `${projects.length} Originals`,
   ];
 
   const floating = [

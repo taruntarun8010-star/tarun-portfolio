@@ -17,10 +17,13 @@ export const profile = {
   role: 'FULL-STACK DEVELOPER',
   tagline: ['FULL-STACK DEVELOPER', 'MERN & PERN', 'PYTHON & C++'],
   intro:
-    'Analytical Full Stack Developer and final-year BCA student at Accurate Institute of Management and Technology (CCSU) with expertise in MERN/PERN stacks, core programming (Python, C++), and building secure, scalable applications and autonomous AI agents.',
+    'Full Stack Developer skilled in MERN/PERN stacks, Python, C++, C, and JavaScript, building scalable web apps, REST APIs, and autonomous AI agents using Llama and Gemini.',
   location: 'Greater Noida, Uttar Pradesh',
-  email: 'mailto:taruntarun8010@gmail.com',
+  phone: '+91 7906006910',
+  portfolioUrl: 'https://tarun-portfolio-six-inky.vercel.app',
+  email: 'taruntarun8010@gmail.com',
   links: {
+    portfolio: 'https://tarun-portfolio-six-inky.vercel.app',
     linkedin: 'https://www.linkedin.com/in/tarun-sinha-417391355',
     github: 'https://github.com/taruntarun8010-star',
   },
@@ -42,16 +45,18 @@ export const education = [
     period: '2024 – 2027 (Expected)',
     score: 'CCSU',
   },
-  {
-    school: 'U.P. Board',
-    place: 'Uttar Pradesh',
-    degree: 'Class XII (2024) & Class X (2022) - U.P. Board',
-    period: '2022 – 2024',
-    score: 'Schooling',
-  },
 ];
 
 export const experience = [
+  {
+    company: 'Talking Crooks IT Pvt. Ltd.',
+    role: 'Web Development Intern (Frontend)',
+    place: 'India',
+    period: 'Jul 2026 - Nov 2026',
+    points: [
+      'Completed a 60-day frontend internship, delivering responsive UI modules, interactive components, and cross-device layouts.',
+    ],
+  },
   {
     company: 'Uptricks Services Pvt. Ltd.',
     role: 'Full Stack Developer Intern',
@@ -117,6 +122,22 @@ export const projects: Project[] = [
     github: 'https://github.com/taruntarun8010-star',
     palette: { from: '#2a0610', via: '#7a0f24', to: '#0b0710', accent: '#ff3d5a' },
     motif: 'shield',
+  },
+  {
+    id: 'developer-portfolio-3d',
+    title: 'Developer Portfolio & 3D Web Apps',
+    year: '2026',
+    genre: 'Portfolio • 3D • AI',
+    logline: 'A TypeScript portfolio with a Gemini API chatbot and Three.js / R3F 3D applications.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Gemini API', 'Three.js', 'React Three Fiber'],
+    build: [
+      'Built a TypeScript portfolio with a Gemini API chatbot.',
+      'Created Three.js / React Three Fiber apps including a 3D Vehicle/Aircraft Part Inspector and 3D Digital Graveyard.',
+    ],
+    features: ['Gemini API chatbot', '3D Vehicle/Aircraft Part Inspector', '3D Digital Graveyard'],
+    metrics: [{ value: '3D', label: 'web applications' }],
+    palette: { from: '#05151c', via: '#16465a', to: '#05090c', accent: '#63d8ff' },
+    motif: 'flow',
   },
   {
     id: 'vyaparlink',
@@ -211,6 +232,55 @@ export type Achievement = {
 
 export const achievements: Achievement[] = [
   {
+    id: 'isro-bharatiya-antariksh',
+    title: 'ISRO Bharatiya Antariksh Hackathon 2026',
+    org: 'Hack Warriors · AlvEROS PS-8',
+    detail: 'Team Lead.',
+    laurel: 'Team Lead',
+  },
+  {
+    id: 'operation-black-vault',
+    title: 'Operation Black Vault CTF 2026',
+    org: 'CTF',
+    detail: 'Solved web exploitation, SQL Injection, JWT manipulation, and OSINT challenges.',
+    laurel: 'Competitor',
+  },
+  {
+    id: 'traceagent',
+    title: 'WebBee IronLabs AI Hackathon',
+    org: 'TraceAgent',
+    detail: 'Built TraceAgent, an autonomous log analysis and remediation dashboard.',
+    laurel: 'Jun 2026',
+  },
+  {
+    id: 'hackdays-glb',
+    title: 'HackDays 2.0 & GLB Hackathon 5.0',
+    org: 'GCET · RAKSHA SETU & MarkWise',
+    detail: 'Built RAKSHA SETU frontend and MarkWise backend API architecture.',
+    laurel: 'Sep 2026',
+  },
+  {
+    id: 'microsoft-hack-the-fall',
+    title: 'Microsoft Hack The Fall',
+    org: 'Hack The Fall 2024 & 2025',
+    detail: 'National hackathon participant.',
+    laurel: '2024 · 2025',
+  },
+  {
+    id: 'hackindia-techstay',
+    title: 'HackIndia & TechStay 2.0',
+    org: 'National Hackathons',
+    detail: 'National hackathon participant.',
+    laurel: 'Participant',
+  },
+  {
+    id: 'spark-4',
+    title: 'Spark 4',
+    org: 'National Hackathon',
+    detail: 'National hackathon participant.',
+    laurel: 'Participant',
+  },
+  {
     id: 'github-copilot-dev-day',
     title: 'GitHub Copilot Dev Day (Tech4Hack)',
     org: 'Tech4Hack',
@@ -224,13 +294,6 @@ export const achievements: Achievement[] = [
     detail: 'Participant.',
     laurel: 'Participant',
   },
-  {
-    id: 'hackindia-techstay',
-    title: 'HackIndia & TechStay 2.0',
-    org: 'SRM Ghaziabad',
-    detail: 'National Finalist / Participant.',
-    laurel: 'Finalist / Participant',
-  },
 ];
 
 export type Certification = { issuer: string; name: string; link: string };
@@ -238,6 +301,7 @@ export type Certification = { issuer: string; name: string; link: string };
 export const certifications: Certification[] = [
   { issuer: 'IBM', name: 'IBM AI Developer Professional Certificate', link: '' },
   { issuer: 'HENNGE', name: 'HENNGE Admission Challenge 004 (Python recursive & SHA-512 TOTP solutions)', link: '' },
+  { issuer: 'Cybersecurity Alliance 2026', name: 'Gurugram Workshop on Network Defense & Ethical Hacking', link: '' },
 ];
 
 export type Skill = { name: string; mono: string; note?: string };
@@ -253,6 +317,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'C++', mono: 'C+' },
       { name: 'C', mono: 'C' },
       { name: 'JavaScript', mono: 'Js' },
+      { name: 'TypeScript', mono: 'Ts' },
       { name: 'Java', mono: 'Jv' },
       { name: 'SQL', mono: 'Sq' },
     ],
@@ -263,8 +328,11 @@ export const skillCategories: SkillCategory[] = [
     subtitle: 'Interfaces and backend systems',
     skills: [
       { name: 'React.js', mono: 'Re' },
+      { name: 'Next.js', mono: 'Nx' },
       { name: 'Node.js', mono: 'No' },
       { name: 'Express.js', mono: 'Ex' },
+      { name: 'Zustand', mono: 'Zu' },
+      { name: 'Three.js', mono: '3j' },
       { name: 'HTML5', mono: 'Ht' },
       { name: 'CSS3', mono: 'Cs' },
       { name: 'Tailwind CSS', mono: 'Tw' },
@@ -278,6 +346,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'PostgreSQL', mono: 'Pg' },
       { name: 'MongoDB', mono: 'Mg' },
+      { name: 'MongoDB Atlas', mono: 'At' },
       { name: 'MySQL', mono: 'My' },
     ],
   },
@@ -289,10 +358,30 @@ export const skillCategories: SkillCategory[] = [
       { name: 'GitHub Copilot', mono: 'Gc' },
       { name: 'LLM Integration', mono: 'Ll' },
       { name: 'Ollama', mono: 'Ol' },
+      { name: 'Llama', mono: 'Ll' },
+      { name: 'Google Gemini', mono: 'Ge' },
       { name: 'HMAC-SHA-512', mono: 'Hm' },
-      { name: 'TOTP', mono: 'To' },
+      { name: 'TOTP RFC 6238', mono: 'To' },
+      { name: 'SQL Injection', mono: 'Si' },
+      { name: 'JWT Security', mono: 'Jwt' },
+      { name: 'OSINT', mono: 'Os' },
       { name: 'Kali Linux', mono: 'Kl' },
       { name: 'Penetration Testing', mono: 'Pt' },
+    ],
+  },
+  {
+    id: 'tools-platforms',
+    title: 'Tools & Platforms',
+    subtitle: 'Development and deployment',
+    skills: [
+      { name: 'Git', mono: 'Gt' },
+      { name: 'GitHub', mono: 'Gh' },
+      { name: 'Docker', mono: 'Dk' },
+      { name: 'Linux', mono: 'Li' },
+      { name: 'Ubuntu', mono: 'Ub' },
+      { name: 'Postman', mono: 'Pm' },
+      { name: 'Vercel', mono: 'Ve' },
+      { name: 'Render', mono: 'Rn' },
     ],
   },
 ];
@@ -306,23 +395,30 @@ export const skillEvidence: Record<string, string[]> = {
   'C++': ['Core programming'],
   C: ['Core programming'],
   JavaScript: ['Full-stack development'],
+  TypeScript: ['Developer Portfolio & 3D Web Apps'],
   Java: ['Core programming'],
   SQL: ['Database development'],
   'React.js': ['The Developers Guild', 'RAKSHA SETU'],
+  'Next.js': ['Technical skills'],
   'Node.js': ['The Developers Guild', 'VyaparLink'],
   'Express.js': ['Backend REST APIs'],
   HTML5: ['Web technologies'],
   CSS3: ['Web technologies'],
   'Tailwind CSS': ['RAKSHA SETU'],
   Bootstrap: ['Web technologies'],
+  Zustand: ['Technical skills'],
+  'Three.js': ['Developer Portfolio & 3D Web Apps'],
   PostgreSQL: ['Uptricks Services internship'],
   MongoDB: ['Uptricks Services internship'],
+  'MongoDB Atlas': ['The Developers Guild'],
   MySQL: ['Database development'],
   'GitHub Copilot': ['GitHub Copilot Dev Day (Tech4Hack)'],
   'LLM Integration': ['Project JOY (Jarvis)'],
   Ollama: ['Project JOY (Jarvis)'],
+  Llama: ['Project JOY (Jarvis)'],
+  'Google Gemini': ['Developer Portfolio & 3D Web Apps'],
   'HMAC-SHA-512': ['HENNGE Admission Challenge 004'],
-  TOTP: ['HENNGE Admission Challenge 004'],
+  'TOTP RFC 6238': ['HENNGE Admission Challenge 004'],
   'Kali Linux': ['AI & Security'],
   'Penetration Testing': ['AI & Security'],
 };
@@ -353,22 +449,6 @@ const jade: Palette = { from: '#03150f', via: '#0d5a40', to: '#050a08', accent: 
 export const seasons: Season[] = [
   {
     number: 1,
-    title: 'The Beginning',
-    period: '2022 – 2024',
-    synopsis: 'Schooling under the U.P. Board: Class X in 2022 and Class XII in 2024.',
-    episodes: [
-      {
-        code: 'S01 E01',
-        title: 'The Foundation',
-        description: 'Class XII (2024) and Class X (2022) under the U.P. Board.',
-        tags: ['Class XII', 'Class X'],
-        runtime: '2022 – 2024',
-        palette: amber,
-      },
-    ],
-  },
-  {
-    number: 2,
     title: 'Enter: BCA',
     period: '2024 – 2027 (Expected)',
     synopsis: 'Bachelor of Computer Applications at Accurate Institute of Management and Technology (CCSU), Greater Noida.',
@@ -400,17 +480,17 @@ export const seasons: Season[] = [
     ],
   },
   {
-    number: 3,
+    number: 2,
     title: 'Learning to Build',
     period: 'Dec 2025 - Feb 2026',
     synopsis: 'Full Stack Developer Intern at Uptricks Services Pvt. Ltd.',
     episodes: [
       {
         code: 'S03 E01',
-        title: 'The Trainee',
-        description: 'Full Stack Developer Intern building web applications and backend services.',
-        tags: ['Frontend', 'Backend', 'Databases'],
-        runtime: 'Dec 2025 - Feb 2026',
+        title: 'The Frontend Intern',
+        description: 'Web Development Intern (Frontend) at Talking Crooks IT Pvt. Ltd., delivering responsive UI modules and cross-device layouts.',
+        tags: ['Frontend', 'Responsive UI', 'Components'],
+        runtime: 'Jul 2026 - Nov 2026',
         palette: ocean,
       },
       {
@@ -432,7 +512,7 @@ export const seasons: Season[] = [
     ],
   },
   {
-    number: 4,
+    number: 3,
     title: 'Building Real Products',
     period: '2026',
     synopsis: 'Original projects, AI platforms, and hackathon and CTF participation.',
@@ -464,7 +544,7 @@ export const seasons: Season[] = [
     ],
   },
   {
-    number: 5,
+    number: 4,
     title: "What's Next",
     period: 'Now streaming',
     synopsis: 'Full-stack development with MERN/PERN stacks, Python, C++, and autonomous AI agents.',
@@ -516,7 +596,7 @@ export const introSlides: IntroSlide[] = [
   {
     kicker: 'Training',
     title: 'The Training Arc',
-    lines: ['Full Stack Developer Intern · Uptricks Services Pvt. Ltd.', 'Dec 2025 - Feb 2026', 'Frontend · Backend · Databases · Deployment'],
+    lines: ['Web Development Intern (Frontend) · Talking Crooks IT Pvt. Ltd.', 'Jul 2026 - Nov 2026', 'Full Stack Developer Intern · Uptricks Services Pvt. Ltd. · Dec 2025 - Feb 2026'],
   },
   {
     kicker: 'Projects',
@@ -526,7 +606,7 @@ export const introSlides: IntroSlide[] = [
   {
     kicker: 'Achievements',
     title: 'Achievements',
-    lines: ['GitHub Copilot Dev Day (Tech4Hack)', 'Hack The Fall 2025', 'HackIndia & TechStay 2.0 — SRM Ghaziabad'],
+    lines: ['ISRO Bharatiya Antariksh Hackathon 2026 · Hack Warriors', 'Operation Black Vault CTF 2026', 'WebBee IronLabs AI Hackathon · TraceAgent'],
   },
   {
     kicker: 'Certified',

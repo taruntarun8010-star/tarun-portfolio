@@ -48,7 +48,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
           </div>
           <dl className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-xl bg-white/10 text-center">
             {[
-              { v: education[0].score.replace('CGPA ', ''), k: 'CGPA' },
+              { v: education[0].score, k: 'Affiliation' },
               { v: String(projects.length), k: 'Originals' },
               { v: String(certifications.length), k: 'Certs' },
             ].map((s) => (
@@ -97,6 +97,11 @@ export function ResumeSheet() {
           <h3 className="mt-1 font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[0.9] tracking-wide text-bone">{profile.fullName}</h3>
         </div>
         <div className="text-xs leading-relaxed text-mist sm:text-right">
+          <p>{profile.location}</p>
+          <p>{profile.phone}</p>
+          <a href={profile.portfolioUrl} target="_blank" rel="noreferrer" className="block hover:text-bone">
+            Portfolio ↗
+          </a>
           <a href={`mailto:${profile.email}`} className="block hover:text-bone">
             {profile.email}
           </a>
